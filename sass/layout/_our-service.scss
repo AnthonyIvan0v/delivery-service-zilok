@@ -1,0 +1,29 @@
+.our-section{
+    padding-top: 8px;
+
+}
+.our-service-title{
+    text-indent: 4%;
+    font-size: 18px;
+    font-weight:600;
+
+}
+
+.our-service-subtitle{
+    margin-top: 8px;
+    text-indent: 3%;
+    font-size: 16px;
+}
+.materials-list{
+    margin-top: 8px;
+    margin-left: 25px;
+    list-style:disc;
+}
+
+.materials-list li:not(:first-child){
+    margin-top: 8px; 
+}
+
+.option-service-title{
+    margin-top: 8px;
+}
