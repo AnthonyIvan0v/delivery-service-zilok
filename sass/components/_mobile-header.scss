@@ -35,15 +35,13 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateX(-4%);
+    transform: translateX(-3%);
 }
 
 .button-close{
     position: absolute;
     top: 20px;
     right: 20px;
-    border: 2px solid var(--primary-text-color);
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
