@@ -100,11 +100,11 @@ img {
 
 .mobile-menu {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   z-index: 999;
   top: 0;
-  transform: translateX(100%);
+  transform: translateX(100vw);
   background-color: var(--mobile-menu-background-color);
   opacity: 0;
   visibility: 0;
@@ -115,7 +115,7 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateX(-3%);
+  transform: translateX(0%);
 }
 
 .button-close {
