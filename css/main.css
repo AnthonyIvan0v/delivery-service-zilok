@@ -3,6 +3,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  hyphens: auto;
 }
 
 h1,
@@ -188,6 +189,15 @@ img {
   border-color: #e29930;
 }
 
+.logo-footer {
+  color: var(--primary-white-color);
+  border-color: var(--primary-white-color);
+}
+
+.logo-footer span {
+  border-color: var(--primary-white-color);
+}
+
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(../images/hero.jpg);
   background-position: center;
@@ -198,6 +208,7 @@ img {
 }
 
 .hero-title {
+  hyphens: none;
   font-weight: 900;
   font-size: 36px;
   max-width: 700px;
@@ -354,4 +365,67 @@ td, th {
   font-size: 16px;
   text-indent: 3%;
   margin-top: 16px;
+}
+
+footer {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: var(--primary-text-color);
+  color: var(--primary-white-color);
+}
+
+.slogan {
+  margin-top: 8px;
+  text-indent: 3%;
+}
+
+address {
+  font-style: inherit;
+}
+
+.contacts-list-footer {
+  margin-top: 12px;
+}
+
+.empl {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contacts-list-footer-item:not(:first-child) {
+  margin-top: 12px;
+}
+
+.wrapper-social {
+  margin-top: 14px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.title-join {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.social-list-item:not(:first-child) {
+  margin-left: 14px;
+}
+
+.social-link {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: var(--primary-text-color);
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link svg {
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */
