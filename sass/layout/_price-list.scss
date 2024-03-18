@@ -1,0 +1,23 @@
+.section-price{
+    padding-top: 16px;
+}
+
+table{
+    font-size: 14px;
+}
+
+tr{
+    height: 46px;
+}
+
+td, th{
+    border: 1px solid var(--primary-text-color);
+    border-radius: 1px;
+    padding-left: 10px;
+}
+
+.desription-table{
+    text-indent: 3%;
+    margin-top: 12px;
+    font-size: 12px;
+}
