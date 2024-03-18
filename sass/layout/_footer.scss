@@ -5,13 +5,11 @@ footer{
     color: var(--primary-white-color);
 }
 
-.wrapper-logo-slogan{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-}
+
 .slogan{
-    max-width: 240px;
+    margin-top: 12px;
+    text-indent: 3%;
+    font-size: 14px;
     text-align: left;
 }
 
@@ -31,6 +29,17 @@ address{
 
 .contacts-list-footer-item:not(:first-child){
     margin-top: 16px;
+}
+
+.location{
+    display: flex;
+    align-items: baseline;
+    margin-top: 24px;
+}
+
+.location svg{
+    margin-right: 6px;
+    fill: currentColor;
 }
 
 .wrapper-social{
