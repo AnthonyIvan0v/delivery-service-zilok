@@ -48,7 +48,7 @@ address{
 .social-list{
     display: flex;  
     justify-content: center;
-    margin-top: 6px;
+    margin-top: 12px;
 }
 
 .title-join{
@@ -73,4 +73,15 @@ address{
 
 .social-link svg{
     fill: currentColor;
+}
+
+.developer{
+    margin: 12px auto 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.developer a{
+    font-weight: 500;
+    border-bottom: 1px solid var(--primary-white-color);
 }
