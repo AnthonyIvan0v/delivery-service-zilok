@@ -1,0 +1,26 @@
+#myBtn {
+    display: none;
+    position: fixed;
+    width: 44px;
+    height: 44px;
+    bottom: 4px;
+    right: 15px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #D9D9D9;
+    // border: 1px solid var(--primary-text-color);
+    color: white;
+    cursor: pointer;
+    // padding: 6px;
+    border-radius: 50%;
+    // font-size: 18px; 
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+#myBtn svg{
+    fill: var(--primary-text-color);
+}
