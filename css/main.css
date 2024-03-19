@@ -429,7 +429,7 @@ td + td {
 
 footer {
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
   background-color: var(--primary-text-color);
   color: var(--primary-white-color);
 }
@@ -452,6 +452,12 @@ address {
 .empl {
   font-size: 20px;
   font-weight: 700;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.empl:hover, .empl:focus {
+  color: var(--accent-color);
 }
 
 .contacts-list-footer-item:not(:first-child) {
@@ -463,6 +469,12 @@ address {
   display: flex;
   align-items: baseline;
   margin-top: 24px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.location:hover, .location:focus {
+  color: var(--accent-color);
 }
 
 .location svg {
@@ -498,23 +510,41 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link:hover, .social-link:focus {
+  transform: scale(1.1);
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .social-link svg {
   fill: currentColor;
 }
 
-.developer {
-  margin: 14px 0 0;
-  font-size: 11px;
+.wrapper-border {
+  margin-top: 12px;
+  padding-top: 6px;
   border-top: 1px solid var(--primary-white-color);
-  padding-top: 8px;
-  padding-left: 8px;
+}
+
+.developer {
+  font-size: 11px;
 }
 
 .developer a {
   font-weight: 500;
-  border-bottom: 1px solid var(--primary-white-color);
+  border-bottom: 1px solid;
+  border-color: var(--primary-white-color);
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.developer a:hover, .developer a:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 #myBtn {
@@ -531,10 +561,12 @@ address {
   color: white;
   cursor: pointer;
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-#myBtn:hover {
-  background-color: #555;
+#myBtn:hover, #myBtn:focus {
+  background-color: var(--accent-color);
 }
 
 #myBtn svg {

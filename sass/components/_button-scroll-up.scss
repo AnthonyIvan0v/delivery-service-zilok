@@ -15,11 +15,15 @@
     // padding: 6px;
     border-radius: 50%;
     // font-size: 18px; 
+    transition-property: background-color;
+        @include animation;
+    
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
 }
 
-#myBtn:hover {
-    background-color: #555;
-}
 
 #myBtn svg{
     fill: var(--primary-text-color);
