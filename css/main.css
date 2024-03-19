@@ -137,6 +137,8 @@ img {
   color: var(--primary-text-color);
   background-color: transparent;
   transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close:hover {
@@ -159,6 +161,19 @@ img {
   margin-top: 24px;
 }
 
+.mobile-menu-link {
+  display: inline-block;
+  transform: scale(1);
+  color: var(--primary-text-color);
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-link:hover, .mobile-menu-link:focus {
+  transform: scale(1.1);
+  color: var(--accent-color);
+}
+
 .contacts-list-mobile {
   margin-top: 50px;
   margin-left: 50px;
@@ -173,6 +188,13 @@ img {
 .contacts-list-mobile-link {
   display: flex;
   align-items: center;
+  transition-property: color, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-list-mobile-link:hover, .contacts-list-mobile-link:focus {
+  transform: scale(1.1);
+  color: var(--accent-color);
 }
 
 .icon-phone {
@@ -201,7 +223,7 @@ img {
   border-top: 3px solid var(--primary-text-color);
   border-bottom: 3px solid var(--primary-text-color);
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   transition-property: border-color;
   transition-duration: 250ms;
@@ -233,7 +255,7 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(../images/hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

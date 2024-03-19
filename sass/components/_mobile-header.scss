@@ -53,6 +53,7 @@
     color: var(--primary-text-color);
     background-color: transparent;
     transition-property: color, transform;
+    @include animation;
 }
 
 .button-close:hover{
@@ -74,6 +75,20 @@
     margin-top: 24px;
 }
 
+.mobile-menu-link{
+    display: inline-block;
+    transform: scale(1);
+    color: var(--primary-text-color);
+    transition-property:  color, transform,;
+    @include animation;
+    
+    &:hover, &:focus{
+        transform: scale(1.1);
+        color: var(--accent-color);
+    }
+}
+
+
 .contacts-list-mobile{
     margin-top: 50px;
     margin-left: 50px;
@@ -87,6 +102,14 @@
 .contacts-list-mobile-link{
     display: flex;
     align-items: center;
+    transition-property: color, transform, ;
+     @include animation;
+    
+        &:hover,
+        &:focus {
+            transform: scale(1.1);
+            color: var(--accent-color);
+        }
 }
 
 .icon-phone{
