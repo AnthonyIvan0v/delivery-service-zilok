@@ -111,6 +111,9 @@ img {
   opacity: 0;
   visibility: 0;
   pointer-events: none;
+  transition-property: opacity, visibility, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
