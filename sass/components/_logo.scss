@@ -1,18 +1,23 @@
 .logo{
-    width: 116px;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: var(--primary-text-color);
+
+    transform: scale(1);
+    transition-property: color;
+    @include animation;
    
 }
 
 .logo span{
-    border-top: 4px solid var(--primary-text-color);
-    border-bottom: 4px solid var(--primary-text-color);
+    border-top: 3px solid var(--primary-text-color);
+    border-bottom: 3px solid var(--primary-text-color);
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 800;
+    transition-property: border-color;
+    @include animation;
 }
 
 .logo svg{
@@ -21,16 +26,19 @@
 
 
 .logo:hover{
-    transform: rotate(2deg);
     color: #e29930;
+    transition-property: color;
+    @include animation;
 
     span{
         border-color: #e29930;
+       
     }
 }
 
 
 .logo-footer{
+    width: 100px;
     color: var(--primary-white-color);
     border-color: var(--primary-white-color);
 }

@@ -1,12 +1,15 @@
 .mobile-header{
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     display: flex;
     justify-content: space-between;
 }
 
 .button-mobile-menu{
-    color: var(--primary-text-color)
+    padding: 0;
+    color: var(--primary-text-color);
+    transition-property: color;
+    @include animation;
 }
 
 .button-mobile-menu:hover{
@@ -30,8 +33,7 @@
     visibility: 0;
     pointer-events: none;
     transition-property: opacity, visibility, transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @include animation;
 }
 
 .mobile-menu.is-open{
@@ -48,7 +50,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--primary-text-color);
     background-color: transparent;
+    transition-property: color, transform;
+}
+
+.button-close:hover{
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+.button-close svg{
+    fill: currentColor;
 }
 
 .mobile-menu-list{
