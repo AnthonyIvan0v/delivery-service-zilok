@@ -16,6 +16,11 @@ td, th{
     padding-left: 10px;
 }
 
+td + td {
+    text-align: center;
+}
+
+
 .desription-table{
     text-indent: 3%;
     margin-top: 12px;

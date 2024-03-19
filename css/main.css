@@ -317,6 +317,10 @@ td, th {
   padding-left: 10px;
 }
 
+td + td {
+  text-align: center;
+}
+
 .desription-table {
   text-indent: 3%;
   margin-top: 12px;
@@ -452,9 +456,11 @@ address {
 }
 
 .developer {
-  margin: 12px auto 0;
+  margin: 14px auto 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
+  border-top: 1px solid var(--primary-white-color);
+  padding-top: 8px;
 }
 
 .developer a {
