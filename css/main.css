@@ -545,6 +545,13 @@ img {
 table {
   font-size: 14px;
 }
+@media screen and (min-width: 768px) {
+  table {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 16px;
+  }
+}
 
 tr {
   height: 46px;
@@ -564,6 +571,11 @@ td + td {
   text-indent: 3%;
   margin-top: 12px;
   font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .desription-table {
+    font-size: 14px;
+  }
 }
 
 .desription-table span {
