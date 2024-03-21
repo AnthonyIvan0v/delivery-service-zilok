@@ -16,13 +16,27 @@
         }
 
 }
-
-.our-service-subtitle{
+.our-service-subtitle {
     margin-top: 8px;
     text-indent: 3%;
     @media screen and (min-width:768px) {
             font-size: 16px;
+            max-width: 80%;
         }
+        
+}
+
+.our-service-subtitle.caption{
+    margin-top: 8px;
+    text-indent: 3%;
+    @media screen and (min-width:768px) {
+            font-size: 16px;
+            max-width:80%;
+        }
+    @media screen and (min-width:1200px) {
+                     font-size: 16px;
+                     max-width:60%;
+    }
 
 }
 .materials-list{
@@ -59,10 +73,10 @@
             right: 45px;
         }
     @media screen and (min-width:1200px) {
-            width: 25%;
-            height: 200px;
+            width: 30%;
+            height: 300px;
             position: absolute;
-            top:10%;
-            right: 45px;
+            top:15%;
+            right: 100px;
         }
 }
