@@ -4,7 +4,6 @@
     align-items: center;
     color: var(--primary-text-color);
 
-    transform: scale(1);
     transition-property: color;
     @include animation;
    
@@ -38,11 +37,15 @@
 
 
 .logo-footer{
-    width: 100px;
+    display: inline;
     color: var(--primary-white-color);
     border-color: var(--primary-white-color);
+   
 }
 
 .logo-footer span{
     border-color: var(--primary-white-color);
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+    }
 }

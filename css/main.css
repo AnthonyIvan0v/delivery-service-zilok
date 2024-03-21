@@ -304,7 +304,6 @@ img {
   flex-direction: column;
   align-items: center;
   color: var(--primary-text-color);
-  transform: scale(1);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -336,13 +335,18 @@ img {
 }
 
 .logo-footer {
-  width: 100px;
+  display: inline;
   color: var(--primary-white-color);
   border-color: var(--primary-white-color);
 }
 
 .logo-footer span {
   border-color: var(--primary-white-color);
+}
+@media screen and (min-width: 768px) {
+  .logo-footer span {
+    font-size: 18px;
+  }
 }
 
 .hero {
@@ -687,6 +691,12 @@ footer {
   font-size: 14px;
   text-align: left;
 }
+@media screen and (min-width: 768px) {
+  .slogan {
+    text-indent: 0;
+    font-size: 16px;
+  }
+}
 
 address {
   font-style: inherit;
@@ -713,6 +723,7 @@ address {
 
 .location {
   font-size: 14px;
+  width: 270px;
   display: flex;
   align-items: baseline;
   margin-top: 24px;
@@ -737,6 +748,11 @@ address {
   display: flex;
   justify-content: center;
   margin-top: 12px;
+}
+@media screen and (min-width: 768px) {
+  .social-list {
+    justify-content: flex-start;
+  }
 }
 
 .title-join {
@@ -778,11 +794,10 @@ address {
 }
 
 .developer {
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .developer a {
-  font-weight: 500;
   border-bottom: 1px solid;
   border-color: var(--primary-white-color);
   transition-property: color, border-color;
