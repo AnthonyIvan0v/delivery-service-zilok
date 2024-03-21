@@ -568,7 +568,12 @@ td, th {
 }
 
 td + td {
-  text-align: center;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  td + td {
+    text-align: center;
+  }
 }
 
 .desription-table {
@@ -820,17 +825,26 @@ address {
   border: none;
   outline: none;
   background-color: #D9D9D9;
-  color: white;
+  color: var(--primary-text-color);
   cursor: pointer;
   border-radius: 50%;
-  transition-property: background-color;
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  #myBtn {
+    width: 54px;
+    height: 54px;
+    bottom: 20px;
+    right: 50px;
+  }
+}
 #myBtn:hover, #myBtn:focus {
   background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 #myBtn svg {
-  fill: var(--primary-text-color);
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */
