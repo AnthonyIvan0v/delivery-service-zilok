@@ -3,7 +3,8 @@
 @import "./base/container";
 @import "./utils/visually-hidden";
 @import "./utils/mixins";
-@import "./components/mobile-header";
+@import "./layout/mobile-header";
+@import "./layout/tablet-desktop-header";
 @import "./components/logo";
 @import "./layout/hero";
 @import "./layout/our-service";
