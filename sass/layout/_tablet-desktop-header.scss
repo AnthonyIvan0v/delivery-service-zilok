@@ -70,12 +70,11 @@
 
     font-size: 14px;
     font-weight: 500;
-    transition-property: color, transform;
+    transition-property: color;
     @include animation;
 
     &:hover,&:focus{
         color: var(--accent-color);
-        transform: scale(1.05);
     }
 }
 
