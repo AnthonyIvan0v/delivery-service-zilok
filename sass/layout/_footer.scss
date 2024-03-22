@@ -5,10 +5,6 @@ footer{
     color: var(--primary-white-color);
 }
 
-// .wrapper-logo-slogan{
-//     display: flex;
-//     align-items: center;
-// }
 
 .slogan{
     margin-top: 12px;
@@ -34,6 +30,7 @@ address{
     font-size: 20px;
     font-weight: 700;
     transition-property: color;
+    cursor: pointer;
         @include animation;
     
         &:hover,
@@ -53,6 +50,7 @@ address{
     align-items: baseline;
     margin-top: 24px;
     transition-property: color;
+    cursor: pointer;
         @include animation;
     
         &:hover,
@@ -96,7 +94,7 @@ address{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    cursor: pointer;
     transition-property: color, transform, ;
     @include animation;
     
@@ -105,6 +103,7 @@ address{
             transform: scale(1.1);
             color: var(--primary-white-color);
             background-color: var(--accent-color);
+           
         }
 }
 

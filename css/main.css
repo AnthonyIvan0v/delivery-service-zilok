@@ -250,6 +250,7 @@ img {
   height: 24px;
   font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
   position: relative;
   transition-property: color;
   transition-duration: 250ms;
@@ -304,6 +305,7 @@ img {
   flex-direction: column;
   align-items: center;
   color: var(--primary-text-color);
+  cursor: pointer;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -349,13 +351,34 @@ img {
   }
 }
 
+.hero-wrapper {
+  background-color: var(--primary-text-color);
+}
+
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-position: center;
   background-size: cover;
+  text-align: center;
   background-repeat: no-repeat;
   background-color: var(--primary-text-color);
   padding: 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(../images/hero-tablet.jpg);
+    height: 400px;
+    max-width: 1199px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3)), url(../images/hero-desktop.jpg);
+    height: 600px;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 }
 
 .hero-title {
@@ -368,6 +391,20 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: var(--primary-white-color);
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    margin: 0 auto;
+    font-size: 48px;
+    margin-top: 2%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    margin: 0 auto;
+    font-size: 56px;
+    margin-top: 4%;
+  }
 }
 
 .our-section {
@@ -471,7 +508,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .section-gallery {
-    padding-top: 12px;
+    padding: 20px;
   }
 }
 
@@ -543,17 +580,19 @@ img {
 }
 
 .section-price {
-  padding-top: 16px;
+  padding: 16px;
 }
 
 table {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   table {
     margin: 0 auto;
     width: 80%;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 700;
   }
 }
 
@@ -564,11 +603,11 @@ tr {
 td, th {
   border: 1px solid var(--primary-text-color);
   border-radius: 1px;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 td + td {
-  text-align: left;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   td + td {
@@ -715,6 +754,7 @@ address {
   font-size: 20px;
   font-weight: 700;
   transition-property: color;
+  cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -733,6 +773,7 @@ address {
   align-items: baseline;
   margin-top: 24px;
   transition-property: color;
+  cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -778,6 +819,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   transition-property: color, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
