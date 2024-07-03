@@ -584,6 +584,7 @@ img {
 }
 
 table {
+  border-collapse: collapse;
   font-size: 16px;
   font-weight: 500;
 }
